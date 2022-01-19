@@ -1,0 +1,55 @@
+/* I like to append this at the bottom, overwriting Markdown-Here's default styling */
+
+/* Casey's header customizations */
+h1 {
+  font-size: 1.2em;
+  margin-top: 30px;
+  display:inline-block;
+  padding: 4px 15px;
+  background-color: #0F4D92;
+  color: white;
+  border-radius: 40px 10px 40px 10px;
+  font-weight:normal;
+  letter-spacing: 3px;
+  font-variant: small-caps;
+}
+
+h2 {
+  font-size: 1.0em;
+  border-bottom: 1px solid #CCC;
+  color: #0F4D92;
+  margin-top:20px;
+}
+
+h3 {
+  font-size: 1.2em;
+  color: #0F4D92;
+}
+
+h4 {
+  font-size: 1.1em;
+  margin-top:30px;
+  font-weight:normal;
+}
+
+h5 {
+  font-size: .8em;
+}
+
+h6 {
+  font-size: 1em;
+  color: #777;
+}
+
+/* Casey's image customizations */
+img {
+margin:20px;
+border:1px solid black;
+}
+
+/* Casey's salutation line */
+/* Style the first para that's an immediate child of the wrapper (e.g., the salutation) */
+div.markdown-here-wrapper > p:first-of-type {
+ margin-left:0em;
+ margin-bottom:1.4em;
+}
