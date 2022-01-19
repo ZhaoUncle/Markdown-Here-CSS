@@ -1,0 +1,203 @@
+.markdown-here-wrapper {
+    font-size: 16px;
+    line-height: 1.8em;
+    letter-spacing: 0.1em;
+  }
+  
+  
+  pre, code {
+    font-size: 0.85em;
+    font-family: Consolas, Inconsolata, Courier, monospace;
+  }
+  
+  code {
+    margin: 0 0.15em;
+    padding: 0 0.3em;
+    white-space: pre-wrap;
+    color: #8873A6;
+    border: 0px none;
+    background-color: #F8F8F8;
+    border-radius: 3px;
+    display: inline;
+  }
+  
+  pre { 
+    font-size: 1em;
+    line-height: 1.2em;
+    margin-bottom: 1.2em;
+  }
+  
+  pre code {
+    white-space: pre;
+    overflow: auto;
+    border-radius: 3px;
+    margin: 0 -0.13em;
+    padding: 0.5em 0.7em;
+    word-wrap:break-word; 
+    white-space: pre-wrap;
+    display: block !important;
+  }
+  
+  /*when need to code*/
+  /*pre code {
+    white-space: pre;
+    overflow: auto;
+    border-radius: 3px;
+    padding: 1px 1px;
+    display: block !important;
+  }*/
+  
+  strong, b{}
+  
+  em, i {
+    color: #8873A6;
+    font-size: 0.9em;
+  }
+  
+  hr {
+    border: 1px solid #ddd;
+    margin: 1.5em auto;
+  }
+  
+  p {
+    margin: 0 5px 1.2em !important;
+  }
+  
+  table, pre, dl, blockquote, q, ul, ol {
+    margin: 10px 5px;
+  }
+  
+  ul, ol {
+    padding-left: 15px;
+  }
+  
+  li {
+    margin: 10px;
+  }
+  
+  li p {
+    margin: 10px 0 !important;
+  }
+  
+  ul ul, ul ol, ol ul, ol ol {
+    margin: 0;
+    padding-left: 10px;
+  }
+  
+  ul {
+    list-style-type: dot;
+  }
+  
+  dl {
+    padding: 0;
+  }
+  
+  dl dt {
+    font-size: 1em;
+    font-weight: bold;
+    font-style: italic;
+  }
+  
+  dl dd {
+    margin: 0 0 1em;
+    padding: 0 1em;
+  }
+  
+  blockquote {
+    left-margin: 0.5em;
+    padding: 0 0.5em;
+  }
+  
+  blockquote, q {
+    border-left: 3px solid #797BAA;
+    padding: 0.5 1.3em; 
+    color: #777;
+    quotes: none;
+  }
+  
+  blockquote::before, blockquote::after, q::before, q::after {
+    content: none;
+  }
+  
+  h1, h2, h3, h5 {
+    margin: 20px 0 10px;
+    padding: 0;
+    font-style: bold !important;
+    text-align: center !important;
+    margin: 1.5em 5px !important;
+    padding: 0.5em 1em !important;
+  }
+  
+  h1 {
+    font-size: 24px !important;
+    color: #8873a6;
+    border-bottom: 1px solid #ddd !important;
+  }
+  
+  h2 {
+    font-size: 20px !important;
+    color: #8873a6;
+    border-bottom: 1px solid #eee !important;
+  }
+  
+  h3 {
+    font-size: 20px;
+    color: #8873a6;
+  }
+  
+  h4 {
+    font-size: 18px;
+    margin: 1.5em 5px;
+    text-align: left;
+  }
+  
+  h6 {
+    font-style: bold !important;  
+    font-size: 17px;
+    color: #b5302e;
+    margin: 1.5em 5px;
+    text-align: left;
+  }
+  
+  table {
+    padding: 0;
+    border-collapse: collapse;
+    border-spacing: 0;
+    font-size: 1em;
+    font: inherit;
+    border: 0;
+    margin: 0 auto;
+  }
+  
+  tbody {
+    margin: 0;
+    padding: 0;
+    border: 0;
+  }
+  
+  table tr {
+    border: 0;
+    border-top: 1px solid #CCC;
+    background-color: white;
+    margin: 0;
+    padding: 0;
+  }
+  
+  table tr:nth-child(2n) {
+    background-color: #797BAA;
+  }
+  
+  table tr th, table tr td {
+    font-size: 16px;
+    border: 1px solid #CCC;
+    margin: 0;
+    padding: 5px 10px;
+  }
+  
+  table tr th {
+    font-weight: bold;
+    color: #eee;
+    border: 1px solid #797BAA;
+    background-color: #797BAA;
+  }
+  
