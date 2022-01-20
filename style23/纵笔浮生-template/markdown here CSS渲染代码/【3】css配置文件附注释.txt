@@ -1,0 +1,214 @@
+.markdown-here-wrapper {/*markdown here 的全局配置*/
+  font-size: 16px;  
+  line-height: 1.8em;   
+  /*em指的是相对单位，当前对象内字体的尺寸，默认浏览器16px*/
+  /*http://www.w3school.com.cn/cssref/css_units.asp*/
+  letter-spacing: 0.1em;
+}
+
+pre, code {   /*,逗号连接是并集选择器*/
+  font-size: 14px;
+  font-family: Roboto, 'Courier New', Consolas, Inconsolata, Courier, monospace;
+  margin: auto 5px;
+}
+/*设置pre 和code的整体属性，pre可以把div中的/r/n保存下来显示，而code则用浏览器的方式渲染*/
+code {
+  white-space: pre-wrap;
+  border-radius: 2px;
+  display: inline;
+}
+/*display 的属性为指定元素框的类型*/
+/*margin： 0为默认值，auto为浏览器自动计算的外边距，外边距属性*/
+/*border-radius: div元素的圆角框*/
+/*write-space:如何处理元素内空白行，回车or忽略,nowrap不换行，pre-wrap换行*/
+/*http://www.w3school.com.cn/cssref/pr_text_white-space.asp*/
+
+
+pre {  /*pre 元素可定义预格式化的文本。被包围在 pre 元素中的文本通常会保留空格和换行符。而文本也会呈现为等宽字体。*/
+  font-size: 15px;
+  line-height: 1.4em;
+  display: block; !important;  /*在ie6以上的浏览器中，设置优先级，覆盖预先设置的属性 !important*/
+}
+
+pre code {  /*空格连接是后代选择器，外层在前内层在后； >连接是子元素选择器*/
+  white-space: pre;
+  overflow: auto;   /*内容益处元素框时候的行为*/
+  border-radius: 3px;
+  padding: 1px 1px;
+  display: block !important;
+}
+
+/*各种选择器：https://blog.csdn.net/m0_38070602/article/details/69950795*/
+
+/*pre code 的解释：http://www.cnblogs.com/lizonghui/archive/2012/09/18/2692355.html*/
+strong, b{  /*strong表示强调，用<b>粗体显示，也可以自定义自己的强调方式*/
+  color: #BF360C;
+}
+
+em, i {  /*em表示强调，用<i>标签斜体显示，也可以自定义自己的强调方式*/
+  color: #009688;
+}
+
+hr {   /*水平线分割---*/
+  border: 1px solid #BF360C;
+  margin: 1.5em auto;
+}
+
+p {  /*段落选择器*/
+  margin: 1.5em 5px !important;
+  /*颜色*/
+  color:#d6a841;   
+  /*字体*/
+  font-family:'微软雅黑';
+  /*字号*/
+  font-size:15px;
+  /*行间距，可用百分比，数值倍数，像素设置，还包括text-indent缩进、letter-spacing字间距、*/
+  line-height:100%  2  100px;
+  /*段间距，一般用margin属性调整*/
+  margin-bottom:20px;
+  /*页边距用padding属性调整*/
+}
+
+/*表格和*/
+table, pre, dl, blockquote, q, ul, ol {
+  margin: 10px 5px;
+  /*并集选择器：表格、预格式化、定义列表、块引用、短引用、无序列表、有序列表*/
+}
+
+ul, ol {  /*无序、有序列表*/
+  padding-left: 15px;
+}
+
+li {  /* 定义列表中的项目*/
+  margin: 10px;
+}
+
+li p {  /*li列表元素中的后代选择器，包含选择器，应用于li中的p*/
+  margin: 10px 0 !important;
+}
+
+ul ul, ul ol, ol ul, ol ol {    /*各个后代选择器一起添加属性*/
+  margin: 0;
+  padding-left: 10px;
+}
+
+ul {
+  list-style-type: circle;
+}
+/*无序列表的前缀，circle,square,好多种,同样有序列表ol也可以设置不同的标记*/
+/*http://www.w3school.com.cn/cssref/pr_list-style-type.asp*/
+
+dl {
+  padding: 0;
+}
+
+dl dt {
+  font-size: 1em;
+  font-weight: bold;  /*加粗  意大利斜体*/
+  font-style: italic;
+}
+
+dl dd {
+  margin: 0 0 10px;
+  padding: 0 10px;
+}
+/*各种表格的包含选择器定义，用空格连接*/
+
+
+blockquote, q {
+  border-left: 2px solid #009688;
+  padding: 0 10px;   /*上右下左的排序，可输入四个值*/
+  color: #777;
+  quotes: none;
+  margin-left: 1em;
+}
+/*块引用和短引用的样式*/
+
+blockquote::before, blockquote::after, q::before, q::after {
+  content: none;
+}
+/*before 和after属于css伪元素，:before在元素之前插入相应。：after在之后插入*/
+/*伪元素用::，伪类用：参考ref。。https://blog.csdn.net/qq_25292481/article/details/52577320*/
+
+
+/*--------同时设置六级标题的属性，其中！important用于指定优先级>ie6--------------*/
+h1, h2, h3, h4, h5, h6 {
+  margin: 20px 0 10px;
+  padding: 0;
+  font-style: bold !important;
+  color: #009688 !important;
+  text-align: center !important;
+  margin: 1.5em 5px !important;
+  padding: 0.5em 1em !important;
+}
+
+h1 {
+  font-size: 24px !important;
+  border-bottom: 1px solid #ddd !important;
+}
+
+h2 {
+  font-size: 20px !important;
+  border-bottom: 1px solid #eee !important;
+}
+
+h3 {
+  font-size: 18px;
+}
+
+h4 {
+  font-size: 16px;
+  /*可以针对自己的标题做出个性化设置*/
+  color:#d6a841   /*16进制颜色*/
+  font-style: bold /*加粗？倾斜*/
+  /*---------各种居中方式---------*/
+  margin: 0, auto;        /*块级元素居中*/
+  text-align: center;    /*行内居中*/
+  justify-content: center;  /*对齐*/
+  vertical-align: middle;  /*垂直居中*/
+  /*ref:   https://www.jianshu.com/p/61c431fd924a*/
+
+}
+
+/*-------------表格元素的设置-----------------*/
+table {
+  padding: 0;
+  border-collapse: collapse;  /*合并边框属性*/
+  border-spacing: 0;  
+  font-size: 1em;
+  font: inherit;
+  border: 0;
+  margin: 0 auto;
+}
+
+tbody {
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
+
+table tr {
+  border: 0;
+  border-top: 1px solid #CCC;
+  background-color: white;
+  margin: 0;
+  padding: 0;
+}
+
+table tr:nth-child(2n) {
+  background-color: #F8F8F8;
+}
+
+table tr th, table tr td {
+  font-size: 16px;
+  border: 1px solid #CCC;
+  margin: 0;
+  padding: 5px 10px;
+}
+
+table tr th {  /*表格。tableraw，tableheader*/
+  font-weight: bold;
+  color: #eee;
+  border: 1px solid #009688;
+  background-color: #009688;
+}

@@ -1,0 +1,186 @@
+.markdown-here-wrapper { /*Markdown Here 的全局配置，没有默认值*/
+  font-size: 14px; /*字号，em默认是相对16px的大小，也可直接用px作单位*/
+  line-height: 1.8em;
+  letter-spacing: 0.1em; /*字间距*/
+  font-family:Inconsolata; /*字体，Consolas, Inconsolata, Courier, monospace系统内没有CSS建议使用的字体时会调用默认字体*/
+}
+
+pre, code {/*pre和code用于代码显示，code通常以元素框即代码块显示，pre则只保留代码中的空格与换行符*/
+font-size: 14px;
+font-family: Roboto, 'Courier New', Consolas, Inconsolata, Courier, monospace;
+margin: auto 5px;
+}
+
+code {
+  white-space: pre-wrap; /*如何处理元素内空白行，回车or忽略,nowrap不换行，pre-wrap换行*/
+  border: 1px solid #EAEAEA; /*边框，用于设置边框属性，1px为边线尺寸，solid意为实线，#EAEAEA为边框颜色*/
+  border-radius: 2px;
+  display: inline;
+}
+
+pre {
+  font-size: 18px;
+  line-height: 1.4em; /*行高*/
+  display: block; !important;
+}
+pre code {
+  white-space: pre;
+  overflow: auto;
+  border-radius: 3px;
+  padding: 1px 1px;
+  display: block !important;
+}
+
+strong, b{ /*strong 加粗，用粗体显示，也可以自定义自己的强调方式 */
+color: #009688;
+}
+
+em, i { /*斜体*/
+color: #009688;
+}
+
+hr { /*分割线*/
+border: 1px solid #2e6e9e;
+margin: 1.5em auto;
+}
+
+p { /*段落设置*/
+  margin: 18px !important;
+  font-size:15px !important;
+  line-height:100% 2 100px !important; /*行间距，可用百分比，数值倍数，像素设置，还包括text-indent缩进、letter-spacing字间距、*/
+  margin-bottom:20px !important; /*段间距*/
+}
+
+table, pre, dl, blockquote, q, ul, ol { /*表格、预格式化、定义列表、块引用、短引用、无序列表、有序列表统一设置*/
+  margin: 10px 5px;
+}
+
+ul, ol { /*无序、有序列表通用设置*/
+  padding-left: 15px;
+}
+
+li { /*列表中项目的设置*/
+  margin: 10px;
+}
+
+li p { /*列表中项目的段落的设置*/
+  margin: 10px 0 !important;
+}
+
+ul ul, ul ol, ol ul, ol ol {/*有序列表、无序列表的统一设置*/
+  margin: 0;
+  padding-left: 10px;
+}
+
+ul { /*无序列表的前缀，circle,square,好多种,同样有序列表ol也可以设置不同的标记*/
+  list-style-type: circle;
+}
+
+dl { /*自定义列表的设置*/
+  padding: 0;
+}
+
+dl dt { /*自定义列表项的设置*/
+  font-size: 1em;
+  font-weight: bold; /*字重*/
+  font-style: italic; /*字形*/
+}
+
+dl dd {
+  margin: 0 0 10px;
+  padding: 0 10px;
+}
+
+blockquote, q { /*引用块设置*/
+  border-left: 2px solid #009688;
+  padding: 0 10px;
+  color: #777;
+  quotes: none;
+  margin-left: 1em;
+}
+
+blockquote::before, blockquote::after, q::before, q::after {
+  content: none;
+}
+
+h1, h2, h3, h4, h5, h6 { /*各级标题统一设置紫色#510E79、绿色#009688、黑色#545454、金色#f79646、笑来金色#BF360C 、深蓝#2e6e9e、灰色BDBDBD*/
+  margin: 20px 0 10px;
+  padding: 0;
+  font-style: bold !important;  /*字重*/
+  color: #009688 !important; /*颜色*/
+  text-align: left !important; /*标题位置,center,right,left*/
+  margin: 1.5em 5px !important;
+  padding: 0.5em 1em !important;
+}
+
+h1 {
+  font-size:18px !important;
+  color: #009688 !important; /*颜色*/
+  border-bottom: 1px solid #ddd !important; /*下划线*/
+}
+
+h2 {
+  font-size:15px  !important;
+  color: #009688 !important;
+}
+
+h3 {
+  font-size: 14px;
+}
+
+h4 {
+  font-size: 14px;
+}
+
+h5 {
+font-size: 14px;
+}
+
+h6 {
+font-size: 14px;
+color: #777 !important;
+}
+
+table { /*表格元素的设置*/
+  padding: 0;
+  border-collapse: collapse;
+  border-spacing: 0;
+  font-size: 1em;
+  font: inherit;
+  border: 0;
+  margin: 0 auto;
+}
+
+tbody { /*表格主题的设置*/
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
+
+table tr {
+  border: 0;
+  border-top: 1px solid #CCC;
+  background-color: white;
+  margin: 0;
+  padding: 0;
+}
+
+table tr:nth-child(2n) {
+  background-color: #F8F8F8; /*背景色*/
+}
+
+table tr th, table tr td { /*tr为行标签、th为表头单元格标签、td为普通单元格标签*/
+  font-size: 16px;
+  border: 1px solid #CCC;
+  margin: 0;
+  padding: 5px 10px;
+}
+
+table tr th {
+  font-weight: bold;
+  color: #eee;
+  border: 1px solid #009688;
+  background-color: #009688;
+}
+
+

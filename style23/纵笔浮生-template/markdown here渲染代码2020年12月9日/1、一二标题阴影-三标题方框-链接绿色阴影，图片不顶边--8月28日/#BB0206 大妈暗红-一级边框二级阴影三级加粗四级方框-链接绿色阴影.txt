@@ -1,0 +1,234 @@
+.markdown-here-wrapper { /*Markdown Here 的全局配置，没有默认值*/
+  font-size: 14px; /*字号em默认是相对16px的大小，也可直接用px作单位*/
+  line-height:28px; /*行间距，可用百分比，数值倍数，像素设置，还包括text-indent缩进、letter-spacing字间距*/
+  word-spacing: 1px;  /*字间距*/
+  letter-spacing: 1px;  /*字母间距*/
+  margin: 0 3px 14px 3px;
+}
+
+pre, code {/*pre和code用于代码显示，code通常以元素框即代码块显示，pre则只保留代码中的空格与换行符*/
+ font-size: 14px; /*代码字体*/
+ font-family: Avenir, "PingFangSC-Light";
+ margin: auto 5px;
+}
+
+code { /*标签通常只是把文本变成 等宽字体*/
+  white-space:nowrap; /*如何处理元素内空白行，回车or忽略,nowrap不换行，pre-wrap换行*/
+  border: 1px solid #EAEAEA; /*边框，用于设置边框属性，1px为边线尺寸，solid意为实线，#EAEAEA为边框颜色*/
+  border-radius: 2px; /*给 div 元素添加圆角的边框*/
+  display: inline;/*inline 表示按照内联模式显示，它会和周围的元素在一行。如果是 display:block, 它会和周围的元素不在一行，自己单独一行。*/
+}
+
+pre { /*严格限制为等宽字体格式*/
+  font-size: 18px;
+  line-height: 1.4em; /*行高*/
+  display: block !important;
+}
+
+pre code {
+  white-space: pre;
+  overflow: auto;
+  border-radius: 3px;
+  padding: 1px 1px;
+  display: block !important;
+}
+
+strong, b{ /*strong 加粗，用粗体显示，也可以自定义自己的强调方式 */
+  color:#BB0206 !important;
+  font-size: 14px
+}
+
+em, i { /*斜体*/
+color: #BB0206 !important;
+}
+
+hr { /*分割线*/
+  border: 0px dotted#BB0206; /*双跟分割线 粗细，solid颜色 #a5a5a5 */
+  border-top:1px dotted#BB0206 !important;/*上分割线 粗细，颜色#ddd跟随主设定，solid类型-不写是跟随标题主色，替换了显示新颜色 */
+  border-bottom:0px dotted#BB0206 !important ; /* 下分割线，粗细solid类型-不写是空心，颜色 */
+  margin:10px 0 10px 0 !important; /*外边距*/
+}
+
+a:link { /* 未被访问的链接 */
+  color:white !important; /*颜色*/
+  font-style: italic !important;  /*字重*/
+  background-color: #009688 !important;
+}
+	
+a:visited {/* 已被访问的链接 */
+  color:white !important; /*颜色*/
+  font-style: italic !important;  /*字重*/
+  background-color: #009688 !important;
+}
+	
+a:hover {/* 鼠标指针移动到链接上 */
+  color:white !important; /*颜色*/
+  font-style: italic !important;  /*字重*/
+  background-color: #009688 !important;
+}	
+
+/*段落设置，内边距用padding*/
+p { 
+  font-family: Avenir, "PingFangSC-Light" !important;
+  padding:  0 0 !important;
+  text-align: justify !important;
+  font-size: 15px !important;
+  text-indent: 0; /*首行缩进*/
+}
+
+table, pre, dl, blockquote, q, ul, ol { /*表格、预格式化、定义列表、块引用、短引用、无序列表、有序列表统一设置*/
+  margin: 10px 5px;
+}
+
+ul, ol { /*无序、有序列表通用设置*/
+  padding-left: 15px;
+}
+
+li { /*列表中项目的设置*/
+  margin: 10px;
+}
+
+li p { /*列表中项目的段落的设置*/
+  margin: 10px 0 !important;
+}
+
+ul ul, ul ol, ol ul, ol ol {/*有序列表、无序列表的统一设置*/
+  margin: 0;
+  padding-left: 10px;
+}
+
+ul { /*无序列表的前缀，circle,square,好多种,同样有序列表ol也可以设置不同的标记*/
+  list-style-type: circle;
+}
+
+dl { /*自定义列表的设置*/
+  padding: 0;
+}
+
+dl dt { /*自定义列表项的设置*/
+  font-size: 14px;
+  font-weight: bold; /*字重*/
+  font-style: italic; /*字形*/
+}
+
+dl dd {
+  margin: 0 0 10px;
+  padding: 0 10px;
+}
+
+blockquote, q { /*引用块设置*/
+  border-left: 2px solid #BB0206;
+  padding: 0 10px;
+  color: #777;
+  quotes: none;
+  margin-left: 1em;
+}
+
+blockquote::before, blockquote::after, q::before, q::after {
+  content: none;
+}
+
+/*各级标题统一设置*/
+h1, h2, h3, h4, h5, h6 { 
+  margin: 7px 0 7px 0; /*段前后、左右缩进值*/
+  padding:5px 0 5px 0;/*内边距,控制和黑线的距离第一个数控制和上划线的距离.上右下左,留白距离、缩进值*/
+  font-style: bold !important; 
+  color: #BB0206 !important; 
+}
+
+h1 {
+  font-size:16px !important;
+  color:#BB0206 !important;/*颜色*/
+  text-align:center !important; /*标题位置,center,right,left*/
+  font-weight:bolder !important; /*字重bold加粗 、 normal正常、bolder更粗*/
+  letter-spacing: 3px !important;
+  border:2px solid #BB0206 !important; /* 边框样式 */
+}
+
+h2 {
+  font-size:16px !important;
+  margin-top:3px 0 !important;
+  padding: 3px 15px !important;
+  text-align:center !important; /*标题位置,center,right,left*/
+  background-color: #BB0206 !important;
+  color: white !important; /*颜色*/
+  font-weight:bolder !important; /*字重bold加粗 、 normal正常、bolder更粗*/
+  letter-spacing: 3px !important;
+  font-variant: small-caps !important;
+  border-top:0 solid#BB0206  !important;/* 粗细，颜色#ddd跟随主设定，solid类型-不写是跟随标题主色，替换了显示新颜色 */
+  border-bottom:0 solid#BB0206  !important ; /* 粗细solid类型-不写是空心，颜色 */
+}
+
+h3 {
+  font-size:16px  !important;
+  color:#BB0206 !important;
+  padding: 5px 0 !important;
+  text-align:left !important; /*标题位置,center,right,left*/
+  width:auto !important;
+  padding:0 auto !important;
+}
+
+h4 {
+  font-size: 14px !important;
+  text-align:left !important; /*标题位置,center,right,left,justify*/
+  color:#BB0206 !important;
+  padding: 0 0 0 7px !important;
+  border:1px dotted #BB0206 !important; 
+  font-weight:normal !important;  /*字重*/
+}
+
+h5 {
+  font-size: 14px !important;
+  text-align:left !important; /*标题位置,center,right,left,justify*/
+  color:#BB0206 !important;
+  padding: 0 0 0 7px !important;
+  border:1px solid #BB0206 !important; 
+  font-weight:normal !important;  /*字重*/
+}
+
+h6 {
+font-size: 14px;
+color: #777 !important;
+}
+
+table { /*表格元素的设置*/
+  padding: 0;
+  border-collapse: collapse;
+  border-spacing: 0;
+  font-size: 1em;
+  font: inherit;
+  border: 0;
+  margin: 0 auto;
+}
+
+tbody { /*表格主题的设置*/
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
+
+table tr {
+  border: 0;
+  border-top: 1px solid #CCC;
+  background-color: white;
+  margin: 0;
+  padding: 0;
+}
+
+table tr:nth-child(2n) {
+  background-color: #F8F8F8; /*背景色*/
+}
+
+table tr th, table tr td { /*tr为行标签、th为表头单元格标签、td为普通单元格标签*/
+  font-size: 16px;
+  border: 1px solid #CCC;
+  margin: 0;
+  padding: 5px 10px;
+}
+
+table tr th {
+  font-weight: bold;
+  color: #eee;
+  border: 1px solid #BB0206; /*表头边框色*/
+  background-color: #BB0206; /*表头背景色*/
+}

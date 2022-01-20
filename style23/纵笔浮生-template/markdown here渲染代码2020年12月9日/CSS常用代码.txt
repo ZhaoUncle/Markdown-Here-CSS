@@ -1,0 +1,53 @@
+  border-bottom:2px solid#ff6827  !important ; /* 粗细solid类型-不写是空心，颜色 */  
+  border-style:solid;
+  border-bottom:thick dotted #ff0000;
+  border-style:solid;
+  border-bottom-style:dotted;
+字体阴影
+text-shadow: 5px 5px 5px #FF0000;
+
+  text-shadow:1px 1px opacity #545454  !important; /* 字体阴影 */
+ -webkit-text-stroke: 1px #009688 !important; /* 粗细solid类型-不写是空心，颜色 */
+
+[css]CSS如何让DIV的宽度随内容的变化
+让div根据内容改变大小
+div{ width:auto; display:inline-block !important; display:inline; }
+
+h1 {
+  font-size:18px !important;
+  width:auto !important;
+  display:inline-block !important; 
+  padding:5px 5px!important;
+  color:#FF6801  !important;/*颜色*/
+  text-align:center !important; /*标题位置,center,right,left*/
+  font-weight:bolder !important; /*字重bold加粗 、 normal正常、bolder更粗*/
+  letter-spacing: 3px !important;
+  border:2px dotted #FF6801 !important;
+  text-shadow:3px 3px 3px #ff6827 !important; /* 字体阴影 */
+}
+
+
+  padding: 3px 15px !important; /* 控制文字到边框的距离 */
+ -webkit-text-stroke:2px #009688 !important; /* 字体描边 */
+  border-top:0 solid#ff6827  !important;/* 粗细，颜色#ddd跟随主设定，solid类型-不写是跟随标题主色，替换了显示新颜色 */
+p
+  {
+  border-style:solid;
+  border-bottom-style:dotted;
+  }
+
+none	定义无边框。
+hidden	与 "none" 相同。不过应用于表时除外，对于表，hidden 用于解决边框冲突。
+dotted	定义点状边框。在大多数浏览器中呈现为实线。
+dashed	定义虚线。在大多数浏览器中呈现为实线。
+solid	定义实线。
+double	定义双线。双线的宽度等于 border-width 的值。
+groove	定义 3D 凹槽边框。其效果取决于 border-color 的值。
+ridge	定义 3D 垄状边框。其效果取决于 border-color 的值。
+inset	定义 3D inset 边框。其效果取决于 border-color 的值。
+outset	定义 3D outset 边框。其效果取决于 border-color 的值。
+inherit	规定应该从父元素继承边框样式。‘
+
+
+  border-style:ridge;
+’
