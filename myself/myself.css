@@ -20,7 +20,7 @@
 
 html {
   background-color: #ffffff;
-  border: 8px double #FAE;
+  border: 8px #FAE;
 }
 
 body {
@@ -28,7 +28,7 @@ body {
 }
 
 div {
-  border: 8px double #FAE; 
+  border: 8px #FAE; 
   padding: 2em;
 }
 
